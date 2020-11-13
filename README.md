@@ -1,4 +1,4 @@
-# gamescores
+# betchampion
 
 ## Project setup
 ```

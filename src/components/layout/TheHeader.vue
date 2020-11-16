@@ -17,7 +17,7 @@ import SvgIcon from "../SvgIcon";
 
 export default {
     components: {
-        SvgIcon
+       SvgIcon
     }
 }
 </script>

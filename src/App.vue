@@ -7,8 +7,8 @@
           <router-view />
         </transition>
       </div>
-      <the-bottom-nav />
     </div>
+    <the-bottom-nav />
   </div>
 </template>
 
@@ -65,7 +65,7 @@ body {
 
 #page {
   max-width: 164rem;
-  min-height: 85vh; /* remove? */
+  min-height: 100vh; /* remove? 100vh*/
   margin: 6rem auto 0;
   border-radius: 3px;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);

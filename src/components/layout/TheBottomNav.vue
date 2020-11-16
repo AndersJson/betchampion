@@ -19,15 +19,15 @@ export default {
 
 <style scoped lang="scss">
 .bottom-nav-container {
-  height: 20rem;
+  height: 10rem;
   width: 100%;
   border-radius: 3px 3px 0 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   left: 0;
+  bottom: 0;
 }
 </style>

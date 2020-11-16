@@ -9,26 +9,22 @@
         <span class="logoutbox__text">Log out</span>
       </div>
     </div>
-    <Navigation />
   </div>
 </template>
 
 <script>
-import Navigation from "./Navigation.vue";
 import SvgIcon from "../SvgIcon";
 
 export default {
-  name: "Header",
-  components: {
-    Navigation,
-    SvgIcon
-  }
-};
+    components: {
+        SvgIcon
+    }
+}
 </script>
 
 <style scoped lang="scss">
 .header {
-  height: 20rem;
+  height: 10rem;
   width: 100%;
   border-radius: 3px 3px 0 0;
   display: flex;

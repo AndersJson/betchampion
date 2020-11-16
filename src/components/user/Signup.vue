@@ -57,6 +57,7 @@
             placeholder=" "
             @blur="$v.forminput.password.$touch()"
             v-model="forminput.password"
+            @focus="log"
           />
           <label class="inputbox__label" for="password">Lösenord</label>
         </div>
@@ -137,7 +138,7 @@ import {
   sameAs
 } from "vuelidate/lib/validators";
 import axios from "axios";
-import alertBox from "../elements/AlertBox";
+import alertBox from "../ui/AlertBox";
 
 export default {
   data() {
@@ -226,6 +227,9 @@ export default {
         lastname: this.forminput.lastname
       };
       //this.$store.dispatch("signup", formData);
+    },
+    log(){
+      console.log(this.$v.forminput); //check wich input has error and if it also is NOT empty.
     }
   }
 };

@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <div id="page">
-      <Header />
+      <the-header></the-header>
       <div class="content">
         <transition :name="transitionName" type="transition" mode="out-in">
           <router-view />
         </transition>
       </div>
+      <the-bottom-nav />
     </div>
   </div>
 </template>
 
 <script>
-import Header from "@/components/header/Header.vue";
+import TheBottomNav from "@/components/layout/TheBottomNav.vue";
+import TheHeader from "@/components/layout/TheHeader.vue";
 
 export default {
   data() {
@@ -21,7 +23,8 @@ export default {
     };
   },
   components: {
-    Header
+    TheBottomNav,
+    TheHeader
   },
   watch: {
     $route(to, from) {
@@ -52,22 +55,23 @@ body {
   font-weight: 400;
   color: #000;
   background: linear-gradient(
-      to right top,
-      rgb(60, 107, 236),
-      rgb(174, 194, 247)
+      to top,
+      rgb(0, 71, 0),
+      rgb(210, 255, 218)
     )
     no-repeat center / cover fixed;
   box-sizing: border-box;
 }
 
 #page {
-  max-width: 114rem;
+  max-width: 164rem;
   min-height: 85vh; /* remove? */
   margin: 6rem auto 0;
   border-radius: 3px;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
   background-color: #cecdcd;
   overflow: hidden;
+  position: relative;
 }
 
 .content {

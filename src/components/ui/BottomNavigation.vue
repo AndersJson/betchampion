@@ -2,22 +2,22 @@
   <nav class="navigation">
     <ul class="navigation__list">
       <router-link to="Home" tag="li" class="navigation__item" active-class="active active--blue">
-        <span class="navigation__link">Home</span>
         <span class="navigation__icon">
           <svg-icon icon-name="home"></svg-icon>
         </span>
+        <span class="navigation__link">Home</span>
       </router-link>
       <router-link to="Group" tag="li" class="navigation__item" active-class="active active--green">
-        <span class="navigation__link">Group</span>
         <span class="navigation__icon">
           <svg-icon icon-name="group"></svg-icon>
         </span>
+        <span class="navigation__link">Group</span>
       </router-link>
       <router-link to="/" tag="li" class="navigation__item" active-class="active active--red" exact>
-        <span class="navigation__link">Friends</span>
         <span class="navigation__icon">
           <svg-icon icon-name="heart"></svg-icon>
         </span>
+        <span class="navigation__link">Friends</span>
       </router-link>
       <router-link
         to="Games"
@@ -25,10 +25,10 @@
         class="navigation__item"
         active-class="active active--yellow"
       >
-        <span class="navigation__link">Settings</span>
         <span class="navigation__icon">
           <svg-icon icon-name="cog"></svg-icon>
         </span>
+        <span class="navigation__link">Settings</span>
       </router-link>
     </ul>
   </nav>
@@ -106,7 +106,7 @@ export default {
     }
   }
   &--green {
-    color: rgb(6, 184, 15) 30%;
+    color: rgb(6, 184, 15);
     & .navigation__icon {
       background-image: linear-gradient(
         to right top,
@@ -131,7 +131,7 @@ export default {
     height: 5.7rem;
     border-radius: 50%;
     border: 5px solid #fff;
-    transform: translateY(1.5rem);
+    transform: translateY(-1.5rem);
   }
 
   & .navigation__icon svg {
@@ -139,7 +139,7 @@ export default {
   }
 
   & .navigation__link {
-    transform: translateY(1.8rem);
+    transform: translateY(-1.8rem);
   }
 }
 </style>

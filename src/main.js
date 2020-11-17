@@ -7,7 +7,7 @@ import Vuelidate from "vuelidate";
 
 Vue.use(Vuelidate);
 
-axios.defaults.baseURL = "https://parlorgame-scores.firebaseio.com";
+axios.defaults.baseURL = "https://betchampion-36e0a.firebaseio.com";
 axios.defaults.headers.get["Accepts"] = "app/json";
 
 Vue.config.productionTip = false;

@@ -57,7 +57,6 @@
             placeholder=" "
             @blur="$v.forminput.password.$touch()"
             v-model="forminput.password"
-            @focus="log"
           />
           <label class="inputbox__label" for="password">Lösenord</label>
         </div>
@@ -226,10 +225,7 @@ export default {
         firstname: this.forminput.firstname,
         lastname: this.forminput.lastname
       };
-      //this.$store.dispatch("signup", formData);
-    },
-    log(){
-      console.log(this.$v.forminput); //check wich input has error and if it also is NOT empty.
+      this.$store.dispatch("signup", formData);
     }
   }
 };

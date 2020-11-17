@@ -30,7 +30,7 @@ const actions = {
   },
   signup({ commit, dispatch }, authData) {
     authAxios
-      .post("/accounts:signUp?key=AIzaSyCKoAXiyiWZvKBIofAo5aCZxsqUdgO60FM", {
+      .post("/accounts:signUp?key=AIzaSyAIDqENV66XbJMwnicgpmCdDliM8n5dEz0", {
         email: authData.email,
         password: authData.password,
         returnSecureToken: true,
@@ -56,7 +56,7 @@ const actions = {
   login({ commit, dispatch }, authData) {
     authAxios
       .post(
-        "/accounts:signInWithPassword?key=AIzaSyCKoAXiyiWZvKBIofAo5aCZxsqUdgO60FM",
+        "/accounts:signInWithPassword?key=AIzaSyAIDqENV66XbJMwnicgpmCdDliM8n5dEz0",
         {
           email: authData.email,
           password: authData.password,
